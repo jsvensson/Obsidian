@@ -1,4 +1,6 @@
 Epgp::Application.routes.draw do
+  resources :guilds
+
   resources :characters
   get "home/index"
   resources :players
