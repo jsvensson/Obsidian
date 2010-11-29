@@ -15,3 +15,8 @@ SELECT characters.name, players.name, characters.class, guilds.name
   FROM characters
   JOIN players ON characters.player_id = players.id
   LEFT JOIN guilds ON characters.guild_id = guilds.id;
+  
+-- Count how many characters of each class
+SELECT characters.class, count(`id`) num_characters
+  FROM characters
+  GROUP BY class;
