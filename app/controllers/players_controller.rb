@@ -2,7 +2,7 @@ class PlayersController < ApplicationController
   # GET /players
   # GET /players.xml
   def index
-    @players = Player.all(:order => "name", :include=>[:characters])
+    @players = Player.all(:order => "name", :include => [:characters])
 
     respond_to do |format|
       format.html # index.html.erb
