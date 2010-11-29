@@ -3,6 +3,7 @@
 <table>
   <tr>
     <th>Name</th>
+    <th>Members</th>
     <th></th>
     <th></th>
     <th></th>
@@ -11,6 +12,7 @@
 <% @guilds.each do |guild| %>
   <tr>
     <td><%= guild.name %></td>
+    <td><%= guild.characters.size %></td>
     <td><%= link_to 'Show', guild %></td>
     <td><%= link_to 'Edit', edit_guild_path(guild) %></td>
     <td><%= link_to 'Destroy', guild, :confirm => 'Are you sure?', :method => :delete %></td>

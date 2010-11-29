@@ -19,6 +19,13 @@
   <%= f.label :player %><br />
   <%= select("character", "player_id", Player.all.collect {|p| [ p.name, p.id ] }, { :include_blank => false }) %>
   </div>
+  <div class="field">
+  <%= f.label :guild %><br />
+  <%= select("character", "guild_id", Guild.all.collect {|p| [ p.name, p.id ] }, { :include_blank => true }) %>
+  </div>
+
+
+
   <div class="actions">
     <%= f.submit %>
   </div>
