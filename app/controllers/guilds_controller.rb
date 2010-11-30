@@ -2,7 +2,7 @@ class GuildsController < ApplicationController
   # GET /guilds
   # GET /guilds.xml
   def index
-    @guilds = Guild.all
+    @guilds = Guild.all(:order => "name", :include => :characters)
 
     respond_to do |format|
       format.html # index.html.erb

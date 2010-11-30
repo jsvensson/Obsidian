@@ -2,7 +2,7 @@ class CharactersController < ApplicationController
   # GET /characters
   # GET /characters.xml
   def index
-    @characters = Character.all(:order => "name")
+    @characters = Character.all(:order => "name", :include => [:guild, :player])
 
     respond_to do |format|
       format.html # index.html.erb
