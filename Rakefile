@@ -4,4 +4,4 @@
 require File.expand_path('../config/application', __FILE__)
 require 'rake'
 
-Epgp::Application.load_tasks
+Obsidian::Application.load_tasks

@@ -1,4 +1,4 @@
-Epgp::Application.routes.draw do
+Obsidian::Application.routes.draw do
   resources :guilds
 
   resources :characters
