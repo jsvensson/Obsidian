@@ -27,7 +27,7 @@ ActiveRecord::Schema.define(:version => 20101027144606) do
   end
 
   create_table "players", :force => true do |t|
-    t.string   "name",       :null => false
+    t.string   "name"
     t.string   "email"
     t.datetime "created_at"
     t.datetime "updated_at"
