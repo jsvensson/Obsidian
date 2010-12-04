@@ -1,0 +1,7 @@
+h1. Obsidian EP/GP System
+
+*Obsidian* is an "EP/GP loot reward system":http://code.google.com/p/epgp/ for World of Warcraft.
+
+h2. Features
+
+...as of right now, not much of anything.
