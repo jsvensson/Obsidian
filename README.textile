@@ -1,7 +1,27 @@
-h1. Obsidian EP/GP System
+h1. Obsidian EPGP System
 
 *Obsidian* is an "EP/GP loot reward system":http://code.google.com/p/epgp/ for World of Warcraft, written for "Ruby on Rails":http://rubyonrails.org/.
 
 h2. Features
 
 ...as of right now, not much of anything.
+
+h2. EPGP in a nutshell
+
+EPGP means *Effort Points/Gear Points*. *Effort Points* (EP) are gained from various criteria, and each guild has their own. Typical examples can be showing up in time for a raid, killing a boss, points for every hour of raiding done, and contributing with materials for buffing flasks.
+
+*Gear Points* (GP) are gained by looting items.
+
+h3. Looting items
+
+Both EP and GP are positive values. From this you then calculate the looting priority that is used when bidding on an item:
+
+<pre>
+priority = EP / GP
+</pre>
+
+The player with the highest priority wins the item, and instantly gains the GP for the item, which lowers his priority.
+
+h3. Decay
+
+To prevent "DKP hoarding", EPGP systems have a set *decay*, for example 10 percent weekly -- both EP and GP are affected by the decay, which reduces the values but keeps the player priorities intact. The result of the decay is that while players can reach a high EP, they will eventually reach a point where the gained EP will match the decay, putting a soft cap on how high your EP can go.
