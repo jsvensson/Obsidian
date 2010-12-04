@@ -1,4 +1,4 @@
 class Guild < ActiveRecord::Base
   has_many :characters
-  validates :name, :presence => true
+  validates :name, :presence => true, :default => "Guild"
 end
