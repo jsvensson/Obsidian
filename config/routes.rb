@@ -1,9 +1,7 @@
 Obsidian::Application.routes.draw do
-  resources :guilds
+  resources :guilds, :characters, :players
 
-  resources :characters
   get "home/index"
-  resources :players
   root :to => "home#index"
 end
 
