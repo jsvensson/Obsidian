@@ -16,6 +16,10 @@
     <%= f.text_field :name %>
   </div>
   <div class="field">
+    <%= f.label :wowclass %><br />
+    <%= select :character, :wowclass, Character::CLASSES %>
+  </div>
+  <div class="field">
   <%= f.label :player %><br />
   <%= select("character", "player_id", Player.all.collect {|p| [ p.name, p.id ] }, { :include_blank => false }) %>
   </div>

@@ -2,7 +2,9 @@
 
 <p>
   <b>Name:</b>
-  <%= @character.name %><br/>
+  <span class="<%= @character.wowclass %>"><%= @character.name %></span><br/>
+  <b>Class:</b>
+  <%= @character.wowclass %><br/>
   <b>Player:</b>
   <%= @character.player.name %><br/>
   <b>Guild:</b>
