@@ -12,7 +12,7 @@
 
 <% @characters.each do |character| %>
   <tr>
-    <td><%= character.name %></td>
+    <td><span class="<%= character.wowclass %>"><%= character.name %></span></td>
     <td><%= character.guild %></td>
     <td><%= character.player.name %></td>
     <td><%= link_to 'Show', character %></td>

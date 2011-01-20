@@ -1,0 +1,46 @@
+/* Character classes */
+
+.deathknight {
+	color: #c41f3b;
+}
+
+.druid {
+	color: #ff7d0a;
+}
+
+.hunter {
+	color: #abd473;
+}
+
+.mage {
+	color: #69ccf0;
+}
+
+.paladin {
+	color: #f58cba;
+}
+
+.priest {
+	color: #fff;
+}
+
+.priest-alt {
+	// Secondary color on white backgrounds
+	color: #ccc;
+}
+
+.rogue {
+	color: #fff569;
+}
+
+.shaman {
+	color: #0070de;
+}
+
+.warlock {
+	color: #9482c9;
+}
+
+.warrior {
+	color: #c79c6e;
+}
