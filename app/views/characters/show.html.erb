@@ -8,7 +8,9 @@
   <b>Player:</b>
   <%= @character.player.name %><br/>
   <b>Guild:</b>
-  <%= @character.guild.name %>
+  <%= if @character.guild
+    @character.guild.name
+  end %>
 </p>
 
 
