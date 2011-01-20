@@ -14,6 +14,6 @@ class Character < ActiveRecord::Base
 
   belongs_to :player
   belongs_to :guild
-  validates :name,      :presence => true
+  validates :name, :presence => true
   validates_inclusion_of :wowclass, :in => CLASSES.values
 end
