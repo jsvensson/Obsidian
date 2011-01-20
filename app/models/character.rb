@@ -9,7 +9,7 @@ class Character < ActiveRecord::Base
     'Priest' => 'priest',
     'Shaman' => 'shaman',
     'Warlock' => 'warlock',
-    'Warrior' => 'warrior' 
+    'Warrior' => 'warrior'
   }
 
   belongs_to :player
