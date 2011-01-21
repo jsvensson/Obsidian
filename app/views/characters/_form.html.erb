@@ -21,11 +21,11 @@
   </div>
   <div class="field">
   <%= f.label :player %><br />
-  <%= select("character", "player_id", Player.all.collect {|p| [ p.name, p.id ] }, { :include_blank => false }) %>
+  <%= select(:character, :player_id, Player.all.collect {|p| [ p.name, p.id ] }) %>
   </div>
   <div class="field">
   <%= f.label :guild %><br />
-  <%= select("character", "guild_id", Guild.all.collect {|p| [ p.name, p.id ] }, { :include_blank => "No guild" }) %>
+  <%= select(:character, :guild_id, Guild.all.collect {|p| [ p.name, p.id ] }, { :include_blank => "No guild" }) %>
   </div>
 
 
