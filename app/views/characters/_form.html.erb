@@ -17,7 +17,7 @@
   </div>
   <div class="field">
     <%= f.label :wowclass %><br />
-    <%= select :character, :wowclass, Character::CLASSES %>
+    <%= select :character, :wowclass, Character::CLASSES.sort {|a,b| a[1] <=> b[1]} %>
   </div>
   <div class="field">
   <%= f.label :player %><br />
